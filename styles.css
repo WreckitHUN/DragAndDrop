@@ -5,13 +5,14 @@ body {
 }
 
 .container {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
 .hand {
   width: 0;
-  position: relative;
+
   top: 75%;
   left: 50%;
 }
@@ -22,11 +23,13 @@ body {
   width: 60px;
   height: 80px;
   border-radius: 10%;
-  background-color: teal;
   transform: translate(0, 0);
+  transition: transform 0.1s linear;
+  cursor: grab;
 }
 
 .card1 {
+  background-color: teal;
   transform: rotate(-20deg);
 }
 
@@ -36,5 +39,23 @@ body {
 }
 
 .card3 {
+  background-color: tomato;
   transform: rotate(20deg);
+}
+
+.card1:hover {
+  transform: translate(0, -30px) rotate(-20deg);
+}
+
+.card2:hover {
+  transform: translate(0, -30px) rotate(0);
+}
+
+.card3:hover {
+  transform: translate(0, -30px) rotate(20deg);
+}
+
+.dragging {
+  transform-origin: center;
+  transform: rotate(0);
 }
