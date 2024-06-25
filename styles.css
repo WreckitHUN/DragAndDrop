@@ -1,0 +1,40 @@
+body {
+  width: 100%;
+  height: 100svh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  width: 0;
+  position: relative;
+  top: 75%;
+  left: 50%;
+}
+
+.card {
+  transform-origin: bottom;
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  border-radius: 10%;
+  background-color: teal;
+  transform: translate(0, 0);
+}
+
+.card1 {
+  transform: rotate(-20deg);
+}
+
+.card2 {
+  background-color: blueviolet;
+  transform: rotate(0);
+}
+
+.card3 {
+  transform: rotate(20deg);
+}
