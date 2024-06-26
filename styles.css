@@ -42,18 +42,6 @@ body {
   transform: rotate(20deg);
 }
 
-.card1:hover {
-  transform: translate(0, -30px) rotate(-20deg);
-}
-
-.card2:hover {
-  transform: translate(0, -30px) rotate(0);
-}
-
-.card3:hover {
-  transform: translate(0, -30px) rotate(20deg);
-}
-
 .dragging {
   transform-origin: center;
   transform: rotate(0);
